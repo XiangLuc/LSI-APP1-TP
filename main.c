@@ -11,7 +11,7 @@ int main() {
     random_comb(secret);
 
     for(int i = 0 ; i < try ; i++) {
-        printf("Attempt %d:\n", i + 1);
+        printf("Tentative %d:\n", i + 1);
         if(!read_comb(comb[i])) {
             printf("Combinaison invalide. Veuillez saisir %d chiffres (0-9).\n", SIZE);
             i--;
