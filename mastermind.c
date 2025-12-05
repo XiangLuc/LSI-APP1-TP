@@ -26,13 +26,13 @@ int read_comb(int comb[]) {
     }
 
     for(int i = 0 ; i < SIZE ; i++) {
-        if(buffer[i] < '0' || buffer[i] > '9') {
+        if(buffer[i] < '1' || buffer[i] > '8') {
             return 0;
         }
 
         int val = (int) buffer[i] - '0';
 
-        if(val < 0 || val > 9) {
+        if(val < 1 || val > 8) {
             return 0;
         }
         comb[i] = val;
@@ -43,7 +43,7 @@ int read_comb(int comb[]) {
 
 void random_comb(int array[]) {
     for(int i = 0 ; i < SIZE ; i++) {
-        array[i] = (rand() % 9) + 1;
+        array[i] = (rand() % 8) + 1;
     }
 }
 
