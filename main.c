@@ -10,7 +10,7 @@ int main() {
 
     int comb[20][5];
     int secret[SIZE];
-    int try = 2;
+    int try = 20;
 
     random_comb(secret);
 
