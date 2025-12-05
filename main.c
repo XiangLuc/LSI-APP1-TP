@@ -17,7 +17,7 @@ int main() {
     for(int i = 0 ; i < try ; i++) {
         printf("Tentative %d:\n", i + 1);
         if(!read_comb(comb[i])) {
-            printf("Combinaison invalide. Veuillez saisir %d chiffres (1-9).\n", SIZE);
+            printf("Combinaison invalide. Veuillez saisir %d chiffres (1-8).\n", SIZE);
             i--;
             continue;
         }
