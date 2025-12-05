@@ -1,12 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 #include "mastermind.h"
 
 int main() {
 
+    srand(time(NULL));
+
     int comb[20][5];
     int secret[SIZE];
-    int try = 20;
+    int try = 2;
 
     random_comb(secret);
 
